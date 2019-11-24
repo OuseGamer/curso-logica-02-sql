@@ -20,7 +20,20 @@ SELECT modelo, preco
 FROM carros
 ORDER BY preco ASC;
 
+select * FROM carros
+Where ano >= 1970 and ano <= 2000;
+
 # Apresentar modelo, preco ordenado pelo preço de forma decrescente
 select modelo, preco
 FROM carros
 ORDER BY preco DESC;
+
+select * from carros
+where cor = 'Branco' or cor = 'Verde';
+
+# Apresentar a data filtrando pelo carro com data de fabricação
+select
+	modelo as 'Modelo',
+select modelo, date_format(data_fabricacao, '%d/%m/%Y') as "Data de Fabricação"
+from carros;
+where data_fabricacao is not null;
