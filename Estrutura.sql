@@ -18,3 +18,17 @@ CREATE TABLE carros(
     preco DOUBLE, # double serve para número real
     data_fabricacao DATE # date serve para data
 );
+
+
+drop table if exists alimentos;
+create table alimentos(
+	id int primary key auto_increment,
+    nome varchar(100) not null
+);
+
+insert into alimentos (nome) values
+('Nescau'),
+('Nescau Cereal'),
+('Bebida Neston'),
+('Polenta com nes'),
+('Achocolatado da tirol');
