@@ -32,8 +32,6 @@ select * from carros
 where cor = 'Branco' or cor = 'Verde';
 
 # Apresentar a data filtrando pelo carro com data de fabricação
-select
-	modelo as 'Modelo',
 select modelo, date_format(data_fabricacao, '%d/%m/%Y') as "Data de Fabricação"
-from carros;
+from carros
 where data_fabricacao is not null;
